@@ -1,0 +1,39 @@
+
+name: Build and Release Sublime Package
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Prepare package
+        run: |
+          mkdir -p dist/ClickableURLsRevived
+          cp -r *.py *.sublime-* "Default (Linux).sublime-keymap" "Default (Windows).sublime-keymap" "Default (OSX).sublime-keymap" README.md LICENSE messages.json dist/ClickableURLsRevived/
+
+      - name: Create .sublime-package zip
+        run: |
+          cd dist/ClickableURLsRevived
+          zip -r ../ClickableURLsRevived.sublime-package .
+          cd ..
+          ls -l
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ClickableURLsRevived.sublime-package
+          path: dist/ClickableURLsRevived.sublime-package
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/ClickableURLsRevived.sublime-package
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
