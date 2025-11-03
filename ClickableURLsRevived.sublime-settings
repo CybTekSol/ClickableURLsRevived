@@ -1,0 +1,4 @@
+{
+  "max_url_highlights": 1000,
+  "highlight_scope": "markup.underline.link"
+}

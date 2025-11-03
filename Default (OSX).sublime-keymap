@@ -1,0 +1,8 @@
+[
+  {
+    "keys": [
+      "super+alt+enter"
+    ],
+    "command": "open_url_under_cursor"
+  }
+]
