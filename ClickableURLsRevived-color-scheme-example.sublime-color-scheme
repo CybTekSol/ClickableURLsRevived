@@ -1,0 +1,11 @@
+{
+  "variables": {},
+  "globals": {},
+  "rules": [
+    {
+      "name": "Clickable URL underline",
+      "scope": "markup.underline.link",
+      "font_style": "underline"
+    }
+  ]
+}

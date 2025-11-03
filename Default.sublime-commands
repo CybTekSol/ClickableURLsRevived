@@ -1,0 +1,6 @@
+[
+  {
+    "caption": "Clickable URLs: Open URL Under Cursor",
+    "command": "open_url_under_cursor"
+  }
+]
