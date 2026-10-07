@@ -1,7 +1,7 @@
 # ClickableURLsRevived
 
-Sublime Text 4+ plugin that underlines URLs and allow you to open the one under your cursor
-in your system's default we browser.
+Sublime Text 4+ plugin that underlines URLs that are present in a text file and allow you to open the one under your cursor
+in your system's default web browser.
 
 ## Install (manual)
 - **Source**: Preferences → Browse Packages… → create `ClickableURLsRevived` and copy files.
