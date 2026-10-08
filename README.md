@@ -6,7 +6,7 @@ in your system's default web browser.
 Developed and maintained by **CybTekSol [ https://github.com/CybTekSol ]**.
 
 **DISCLAIMER:**  
-This plugin is provided free of charge, **AS-IS**, no warranties or guarantees (expressed or implied)... use is at your own risk and is licensed as stated in the README.md located in this repository.
+This plugin is provided free of charge, **AS-IS**, no warranties or guarantees (expressed or implied)... use is at your own risk and is licensed as stated in the LICENSE file located in this repository.
 
 ## Install (manual)
 - **Source**: Preferences → Browse Packages… → create `ClickableURLsRevived` and copy files.
